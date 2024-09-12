@@ -66,4 +66,5 @@ add_subdirectory(docs)
 
 if(SKBUILD)
 	install(TARGETS parselmouth LIBRARY DESTINATION ${CMAKE_INSTALL_PREFIX})
+	install(FILES stubs/parselmouth.pyi DESTINATION ${CMAKE_INSTALL_PREFIX})
 endif()
