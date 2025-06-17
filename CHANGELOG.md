@@ -4,8 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-
 _Nothing yet_
+
+## [0.4.6] - 2025-06-08
+### Fixed
+- Fixed potential vulnerability in Praat's opusfile external dependency (#141).
+- Fixed minimum CMake version in pybind11 subtree to work with CMake 4 (see #144).
+
+## [0.4.5] - 2024-10-11
+### Fixed
+- Fixed compilation issues of source distribution on certain platforms, due to unintentional X11 dependency in `sendpraat.c`.
 
 ## [0.4.4] - 2024-07-30
 ### Fixed
@@ -123,7 +131,9 @@ _Nothing yet_
 - Main functionality of `Thing`, `Data`, `Matrix`, `Vector`, `Sound`, `Spectrum`, `Spectrogram`, and `Intensity` classes. Preliminary implementations of `Pitch`, `Harmonicity`, `Formant`, and `MFCC`.
 - Basic Travis CI configuration.
 
-[Unreleased]: https://github.com/YannickJadoul/Parselmouth/compare/v0.4.4...HEAD
+[Unreleased]: https://github.com/YannickJadoul/Parselmouth/compare/v0.4.6...HEAD
+[0.4.6]: https://github.com/YannickJadoul/Parselmouth/compare/v0.4.5...v0.4.6
+[0.4.5]: https://github.com/YannickJadoul/Parselmouth/compare/v0.4.4...v0.4.5
 [0.4.4]: https://github.com/YannickJadoul/Parselmouth/compare/v0.4.3...v0.4.4
 [0.4.3]: https://github.com/YannickJadoul/Parselmouth/compare/v0.4.2...v0.4.3
 [0.4.2]: https://github.com/YannickJadoul/Parselmouth/compare/v0.4.1...v0.4.2
